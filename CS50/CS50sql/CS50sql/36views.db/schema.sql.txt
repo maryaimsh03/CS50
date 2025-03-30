@@ -1,0 +1,11 @@
+CREATE TABLE views (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    print_number INTEGER NOT NULL,
+    english_title TEXT NOT NULL,
+    japanese_title TEXT,
+    artist TEXT NOT NULL,
+    average_color TEXT NOT NULL,
+    brightness REAL NOT NULL,
+    contrast REAL NOT NULL,
+    entropy REAL NOT NULL
+);

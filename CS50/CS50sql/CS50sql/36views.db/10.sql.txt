@@ -1,0 +1,8 @@
+/* In 10.sql, write a SQL query to answer a question of your choice about the prints. The query should:
+Make use of AS to rename a column
+Involve at least one condition, using WHERE
+Sort by at least one column, using ORDER BY */
+SELECT COUNT(english_title) AS 'TOTAL NO OF ENGLISH TITLE BY Hokusai'
+FROM views
+WHERE artist ='Hiroshige' AND english_title IS NOT NULL
+ORDER BY brightness DESC;

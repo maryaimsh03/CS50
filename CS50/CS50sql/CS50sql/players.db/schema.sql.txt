@@ -1,0 +1,17 @@
+CREATE TABLE players (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
+    bats TEXT CHECK (bats IN ('R', 'L')) NOT NULL,
+    throws TEXT CHECK (throws IN ('R', 'L')) NOT NULL,
+    weight INTEGER NOT NULL,
+    height INTEGER NOT NULL,
+    debut DATE NOT NULL,
+    final_game DATE,
+    birth_year INTEGER NOT NULL,
+    birth_month INTEGER NOT NULL,
+    birth_day INTEGER NOT NULL,
+    birth_city TEXT NOT NULL,
+    birth_state TEXT,
+    birth_country TEXT NOT NULL
+);

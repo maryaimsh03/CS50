@@ -1,0 +1,9 @@
+CREATE TABLE episodes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    season INTEGER NOT NULL,
+    episode_in_season INTEGER NOT NULL,
+    title TEXT NOT NULL,
+    topic TEXT NOT NULL,
+    air_date DATE NOT NULL,
+    production_code TEXT UNIQUE NOT NULL
+);
